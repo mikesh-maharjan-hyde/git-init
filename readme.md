@@ -159,3 +159,9 @@ title: Git branches
 2. Review a pull request
 3. Merge a pull request
 4. Pull remote changes
+
+
+## References
+
+- https://docs.github.com/en/get-started/git-basics/set-up-git
+- https://docs.github.com/en/get-started/git-basics/setting-your-username-in-git
