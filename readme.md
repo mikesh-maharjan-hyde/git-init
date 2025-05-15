@@ -35,6 +35,11 @@ gitGraph
     commit id: "Revert changes"
 ```
 
+```bash
+git add .
+git commit -m "commit message"
+```
+
 ### merge
 
 ```mermaid
@@ -55,6 +60,11 @@ title: Git branches
         merge feature/add-reset-button
 ```
 
+```bash
+git checkout main
+git merge feature/add-button
+```
+
 ### push and pull
 
 ```mermaid
@@ -62,6 +72,40 @@ sequenceDiagram
     Remote->>Local: Pull
     Local-->>Local: Changes
     Local->>Remote: Push
+```
+
+```bash
+git push
+```
+
+```bash
+git pull
+```
+
+```mermaid
+---
+title: Git branches
+---
+    gitGraph
+        commit id: "Setup project"
+        branch feature/add-button
+        commit
+        commit
+        checkout main
+        merge feature/add-button
+        branch feature/add-reset-button
+        commit
+        checkout main
+        branch feature/add-login-feature
+        commit
+        checkout feature/add-reset-button
+        checkout main
+        merge feature/add-reset-button
+        checkout feature/add-login-feature
+        commit
+        merge main
+        checkout main
+        merge feature/add-login-feature
 ```
 
 ## Hands on
