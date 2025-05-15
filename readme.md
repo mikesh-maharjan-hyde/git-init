@@ -1,25 +1,41 @@
 # git init
 
+A guide on getting started with git
 
-## Why
+---
+
+## Why git
 
 - Track changes
 - Collaborate
 - Single source of truth
 - Backup
 
+---
+
 ## Concepts
+
+- branch
+- commit
+- merge
+- push / pull
 
 ### branch
 
 ```mermaid
 ---
-title: Git branch
+title: Git Branch
 ---
 gitGraph
     commit
     commit
 ```
+
+```bash
+git init
+```
+
+---
 
 ### commit
 
@@ -40,11 +56,13 @@ git add .
 git commit -m "commit message"
 ```
 
+---
+
 ### merge
 
 ```mermaid
 ---
-title: Git branches
+title: Merging Branches
 ---
     gitGraph
         commit id: "Setup project"
@@ -65,6 +83,8 @@ git checkout main
 git merge feature/add-button
 ```
 
+---
+
 ### push and pull
 
 ```mermaid
@@ -72,6 +92,10 @@ sequenceDiagram
     Remote->>Local: Pull
     Local-->>Local: Changes
     Local->>Remote: Push
+```
+
+```bash
+git remote -v
 ```
 
 ```bash
@@ -108,21 +132,26 @@ title: Git branches
         merge feature/add-login-feature
 ```
 
+---
+
 ## Hands on
 
 ### Setup
 
-1. Create a github account
-    1. [github.com/signup](https://github.com/signup)
+1. Create a github account - [github.com/signup](https://github.com/signup)
 1. Install [git](https://git-scm.com/downloads/win)
 1. Install [code](https://apps.microsoft.com/detail/xp9khm4bk9fz7q)
 1. Install git [client](https://desktop.github.com/download/)
+
+---
 
 ### Tracking changes
 
 1. Commit changes
 2. Push changes
 3. Revert changes
+
+---
 
 ### Collaborate
 
