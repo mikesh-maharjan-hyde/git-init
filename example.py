@@ -1,5 +1,6 @@
 import random
 import datetime
+import time
 import json
 
 # Mock list of cities
@@ -21,7 +22,7 @@ def get_weather(city):
 def generate_report():
     city = random.choice(CITIES)
     weather = get_weather(city)
-    now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    now = int(time.time() * 1000)
 
     report = {
         "timestamp": now,
