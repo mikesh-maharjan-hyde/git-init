@@ -21,10 +21,12 @@ def get_weather(city):
 def generate_report():
     city = random.choice(CITIES)
     weather = get_weather(city)
-    now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    date = datetime.datetime.now().strftime("%Y-%m-%d")
+    time = datetime.datetime.now().strftime("%H:%M:%S")
 
     report = {
-        "timestamp": now,
+        "date": date,
+        "time": time,
         "city": city,
         "weather": weather
     }
