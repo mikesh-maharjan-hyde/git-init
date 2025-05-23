@@ -166,6 +166,10 @@ title: Git branches
 - Resolving merge conflicts
 - Verifying merges
 
+### Ignoring files
+
+- `.gitignore`
+
 ### Github authentication
 
 - Authenticating with the command line
