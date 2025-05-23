@@ -39,4 +39,4 @@ SELECT
     END AS customer_segment
 FROM ranked_na_customer_info
 WHERE revenue_rank <= 5
-ORDER BY customer_name;
+ORDER BY total_items; -- changes by Ade23052025
