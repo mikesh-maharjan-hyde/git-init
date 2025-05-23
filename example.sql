@@ -39,4 +39,4 @@ SELECT
     END AS customer_segment
 FROM ranked_na_customer_info
 WHERE revenue_rank <= 5
-ORDER BY 1; -- changes by Ade23052025
+ORDER BY customer_name;
