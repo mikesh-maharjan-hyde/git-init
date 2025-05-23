@@ -39,4 +39,4 @@ SELECT
     END AS customer_segment
 FROM ranked_mm_customer_info
 WHERE revenue_rank <= 5
-ORDER BY country, revenue_rank;
+ORDER BY 1; -- changes by Ade23052025
