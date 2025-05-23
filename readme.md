@@ -180,4 +180,5 @@ title: Git branches
 
 - https://docs.github.com/en/get-started/git-basics/set-up-git
 - https://docs.github.com/en/get-started/git-basics/setting-your-username-in-git
-- https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#about-authentication-to-github
+- https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github
+- https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh
