@@ -160,8 +160,20 @@ title: Git branches
 3. Merge a pull request
 4. Pull remote changes
 
+### Merging Branches
+
+- Handling merge conflicts
+- Resolving merge conflicts
+- Verifying merges
+
+### Github authentication
+
+- Authenticating with the command line
+    - HTTPS
+    - SSH
 
 ## References
 
 - https://docs.github.com/en/get-started/git-basics/set-up-git
 - https://docs.github.com/en/get-started/git-basics/setting-your-username-in-git
+- https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#about-authentication-to-github
