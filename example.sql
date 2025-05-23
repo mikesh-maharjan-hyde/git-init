@@ -19,7 +19,7 @@ customer_revenue AS (
     GROUP BY c.id, c.name, c.country
 ),
 
-ranked_mm_customer_info AS (
+ranked_na_customer_info AS (
     SELECT *,
            RANK() OVER (PARTITION BY country ORDER BY total_spent DESC) AS revenue_rank
     FROM customer_revenue
@@ -37,6 +37,6 @@ SELECT
         WHEN total_spent BETWEEN 5000 AND 10000 THEN 'Medium Value'
         ELSE 'Low Value'
     END AS customer_segment
-FROM ranked_mm_customer_info
+FROM ranked_na_customer_info
 WHERE revenue_rank <= 5
 ORDER BY 1; -- changes by Ade23052025
